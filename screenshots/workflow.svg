@@ -1,0 +1,54 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#66bb6a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+    </linearGradient>
+    <filter id="stepShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">CorpusLab 使用流程</text>
+
+  <!-- Step boxes -->
+  <rect x="50" y="70" width="140" height="90" rx="12" fill="#e3f2fd" stroke="#4a90e2" stroke-width="2" filter="url(#stepShadow)"/>
+  <text x="120" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1565c0">1. 加载语料</text>
+  <text x="120" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">TXT / DOCX</text>
+  <text x="120" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">自动语言检测</text>
+
+  <rect x="230" y="70" width="140" height="90" rx="12" fill="#fff8e1" stroke="#ffc107" stroke-width="2" filter="url(#stepShadow)"/>
+  <text x="300" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f57f17">2. 预处理</text>
+  <text x="300" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">分词 / POS</text>
+  <text x="300" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">去停用词</text>
+
+  <rect x="410" y="70" width="140" height="90" rx="12" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2" filter="url(#stepShadow)"/>
+  <text x="480" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2e7d32">3. 选择分析</text>
+  <text x="480" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">12 大功能模块</text>
+  <text x="480" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">本地 / API</text>
+
+  <rect x="590" y="70" width="140" height="90" rx="12" fill="#f3e5f5" stroke="#ab47bc" stroke-width="2" filter="url(#stepShadow)"/>
+  <text x="660" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6a1b9a">4. 查看结果</text>
+  <text x="660" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">表格 / 图表</text>
+  <text x="660" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#424242">导出数据</text>
+
+  <!-- Arrows between steps -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90e2"/>
+    </marker>
+  </defs>
+  <line x1="190" y1="115" x2="230" y2="115" stroke="#4a90e2" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="370" y1="115" x2="410" y2="115" stroke="#4a90e2" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="550" y1="115" x2="590" y2="115" stroke="#4a90e2" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Bottom note -->
+  <rect x="150" y="200" width="500" height="60" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#stepShadow)"/>
+  <text x="400" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#546e7a">支持 AI 功能：情感分析、SFL、语义学、语用学、语步标注</text>
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#546e7a">配置 DeepSeek API Key 后即可使用</text>
+</svg>
