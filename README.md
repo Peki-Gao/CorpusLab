@@ -164,22 +164,6 @@ CorpusLab/
 └── logo.png                   # 应用 Logo
 ```
 
----
-
-## 界面截图（占位）
-
-> 以下位置可替换为真实应用截图：
-
-<p align="center">
-  <img src="screenshots/main.png" alt="主界面" width="700"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/srl.png" alt="语义角色标注" width="700"/>
-</p>
-
----
-
 ## 注意事项
 
 - 项目中使用 `t` 作为 i18n 翻译函数，请避免在方法内部使用 `t` 作为局部变量名，否则会导致 `UnboundLocalError`。
